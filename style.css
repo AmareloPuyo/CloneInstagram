@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@media (max-width:763px){
+    .banner{
+        display: none;
+    }
+}
+
+@media (min-width:1367px){
+    html,
+    body,
+    .principal{
+    height: 100vh;
+}
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+    margin: 32px auto;
+}
+
+.banner img {
+    width: 380px;
+    height: 581px;
+}
+
+.login-container {
+    text-align: center;
+    min-width: 350px;
+}
+
+.form-container {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+}
+.logo img {
+    width: 175px;
+    margin: 36px 0 12px 0;
+}
+.separation-line,
+.login-face,
+.login-container input,
+.no-passwd {
+    width: 268px;
+    height: 32px;
+    margin: 8px auto;
+}
+.login-container{
+    position: relative;
+}
+
+.login-container input {
+    background-color: #FAFAFA;
+    border: 1px solid #dbdbdb;
+    padding-left: 8px;
+    padding-top: 8px;
+    border-radius: 3px;
+}
+.login-container input:focus-within{
+    border: 1px solid #737373;
+    outline: none;
+}
+.login-container .input-field:focus-within ~ .name-label,
+.login-container .input-field:valid ~ .name-label{
+    font-size: 10px;
+    top: 10px;
+}
+
+.login-container .input-field:focus-within ~ label,
+.login-container .input-field:valid ~ label{
+    font-size: 10px;
+    top: 58px;
+}
+.login-container .input-field:valid ~ .mostrar{
+    display: block;
+}
+.login-container input[type="submit"]{
+    font-size: 14px;
+    padding: 0;
+    font-weight:700;
+    background-color: #2295F6 ;
+    border-radius: 8px;
+    border:none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.login-container .name-label{
+    color: #7d7d7d;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    transition: 0.5s;
+}
+.login-container .pass-label{
+    color: #7d7d7d;
+    position: absolute;
+    top: 63px;
+    left: 50px;
+    transition: 0.5s;
+}
+.login-container .mostrar{
+    display: none;
+    color: #262626;
+    font-weight: 600;
+    font-size: 14px;
+    position: absolute;
+    top: 63px;
+    left: 250px;
+    cursor: pointer;
+}
+.login-container .mostrar:hover{
+    color: #7d7d7d;
+}
+.separation-line{
+    position: relative;
+}
+.separation-line .line{
+    bottom: 0px;
+    height: 16px;
+    border-bottom: #dbdbdb 1px solid;
+    padding-top: 16px;
+}
+.separation-line span{
+    color: #7d7d7d;
+    position: absolute;
+    padding: 0 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FAFAFA;
+}
+.login-face img {
+    width: 16px;
+}
+.login-face a{
+    font-size: 14px;
+    font-weight: 600;
+}
+.no-passwd a{
+    font-size: 12px;    
+}
+
+.login-container a{
+    color: #385185;  
+    text-decoration: none;
+}
+
+.apps{
+    min-height: 95px;
+}
+.apps p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31px;
+}
+.apps .apps-btn{
+    height: 44px;
+    margin: 10px auto;
+}
+.apps img {
+    width: 136px;
+}
+.box-register{
+    height: 63px;
+    padding: 10px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+}
+.box-register span{
+    font-size: 14px;
+}
+.box-register a{
+    color: #0095f6 ;
+    font-weight: 600;
+}
+footer {
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 52px;
+    
+}
+
+footer ul ,
+.language{
+    font-size: 12px;
+    color: #737373;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style-type: none;
+}
+.language{
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+}
+.language p{
+    padding-top: 2px;
+}
+.language select{
+    border: none;
+    background-color: #FAFAFA;
+    color: #737373;
+}
